@@ -8,7 +8,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Documentation--Appion React Nextjs  App Landing Documentation</title>
+	<title>Documentation--Appion React Nextjs Gatsby App Landing Documentation</title>
 	<meta name="description" content="">
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,7 +53,7 @@
 		<div class="main-content">
 			<section id="welcome">
 				<div class="content-header main">
-					<h1>Appion React Nextjs  App landing Template</h1>
+					<h1>Appion React Nextjs Gatsby App landing Template</h1>
 				</div>
 				<div class="welcome">
 					<h2 class="twenty">Welcome To Appleon React Nextjs App landing Template</h2>
@@ -66,13 +66,13 @@
 				<div class="features">
 					<h2 class="twenty">Template Features</h2>
 					<ul>
-						<li>Available in Nextjs  version</li>
+						<li>Available in Nextjs &amp; Gatsbyjs version</li>
 						<li>Based on styled components</li>
 						<li>Individual theming options</li>
 						<li>Individual style loding for making page load superfast</li>
 						<li>Reusable components for highly customization</li>
 						<li>Clean &amp; Simple Design</li>
-						<li>Nextjs for SSR(server side rendaring) support</li>
+						<li>Nextjs &amp; Gatsbyjs for SSR(server side rendaring) support</li>
 						<li>No CSS or SCSS file</li>
 						<li>Fully Responsive Design</li>
 						<li>Cross Browser Compatible with IE11+, Firefox, Safari, Opera, Chrome</li>
@@ -113,6 +113,24 @@
 					localhost:3000/blog-list for Blog-List Page </br>
 					localhost:3000/blog-single for Blog-Single Page </br>
 				</p>
+
+				<h3 class="sub-title">
+					Appion run in <a href="https://www.gatsbyjs.org/" class="gatsby" target="_blank"> Gatsby.js
+					</a>server
+				</h3>
+				<ol>
+					<li><code>yarn dev</code> gatsby-landing</li>
+				</ol>
+				<p class="content-list">
+					Then , please go to address localhost:8000 on your browser and You will find default landing
+					page.<br />Similarly <br />
+					localhost:8000/ for App Default Landing Page </br>
+					localhost:8000/classic for App Classic Landing Page </br>
+					localhost:8000/modern for App Modern Landing Page </br>
+					localhost:8000/blog-grid for Blog-Grid Page </br>
+					localhost:8000/blog-list for Blog-List Page </br>
+					localhost:8000/blog-single for Blog-Single Page </br>
+				</p>
 				<h3 class="sub-title">
 					Folder Structure
 				</h3>
@@ -123,6 +141,7 @@
 				<ol>
 					<li>common</li>
 					<li>next-landing</li>
+					<li>gatsby-landing</li>
 				</ol>
 				<h4 class="mini-sub-title styled-text">
 					src folder
@@ -136,6 +155,7 @@
 						<li>assets</li>
 						<li>reusecore</li>
 						<li>sections</li>
+						<li>sections-gatsby</li>
 						<li>theme</li>
 					</ol>
 					<p>Now, we will discuss about each and every folders and their tasks .</p>
@@ -177,7 +197,13 @@
 						Here all the section include that’s we are used in our template like banner, about, features,
 						news, pricing etc etc for <code>nextjs</code> version.
 					</p>
-					
+					<h4 class="mini-sub-title">
+						sections-gatsby
+					</h4>
+					<p>
+						Here all the section include that’s we are used in our template like banner, about, features,
+						news, pricing etc etc for <code>gatsby</code> version.
+					</p>
 					<h4 class="mini-sub-title">
 						theme
 					</h4>
@@ -227,6 +253,20 @@
 						<span>blog-grid.js</span> for Blog Grid Page. <br />
 						<span>blog-list.js</span> for Blog List Page. <br />
 						<span>blog-single</span> for Blog-Single Page .<br />
+					</p>
+				</div>
+				<h4 class="mini-sub-title styled-text">
+					gatsby-landing folder
+				</h4>
+				<div class="p-l-20">
+					<p>
+						According to gatsby configurations ,
+						we gave support for styled components and web fonts for our project.
+						The other settings are as same as gatsby default configurations .
+						You can follow the config documentations of gatsby Js
+						<a target="_blank"
+							href="https://www.gatsbyjs.org/docs/customization/#customization">"https://www.gatsbyjs.org/docs/customization/#customization</a>
+						.
 					</p>
 				</div>
 			</section>
@@ -289,7 +329,23 @@
 
 							Then, an index.html file will created under the public directory.
 						</li>
-						
+						<li>
+							<h4>Deploy your project</h4>
+							To deploy your project, you have to do couple of things. At first, go to firebase.json file.
+							Then delete all codes.
+
+							Go to gatsby.firebase.json file, copy all of
+							the codes and paste it in firebase.json file.
+
+							Before running the below deploy command, you have to delete the public->index.html file. and
+							go to landing->package.json, find engines and do the following
+							<code> "engines": { "node": "8" }</code> or <code> "engines": { "node": "10" }</code>
+
+							Then, To deploy to your site, run the following command from the root of your local project
+							directory:
+							<div class="code">
+								for Gatsbyjs template: <code>yarn gatsby-firebase-deploy</code>
+							</div>
 					</ol>
 
 					<h3 class="mini-sub-title">
@@ -326,6 +382,7 @@
 					<li>Yarn Workspace.</li>
 					<li>React Js.</li>
 					<li>Next Js.</li>
+					<li>Gatsby Js.</li>
 					<li>Styled Components.</li>
 				</ol>
 			</section>
@@ -335,6 +392,7 @@
 					<ul>
 						<li><a target="_blank" href="https://reactjs.org/">Reactjs</a></li>
 						<li><a target="_blank" href="https://nextjs.org/">Nextjs</a></li>
+						<li><a target="_blank" href="https://www.gatsbyjs.org/">Gatsbyjs</a></li>
 						<li><a target="_blank" href="https://styled-components.com/">Styled-components</a></li>
 						<li><a target="_blank" href="https://react-slick.neostack.com/">React-slick</a></li>
 						<li><a target="_blank" href="https://about.gitlab.com/">Gitlab</a></li>

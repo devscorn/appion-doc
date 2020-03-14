@@ -92,6 +92,10 @@ section p {
 .p-l-20 {
   padding-left: 20px;
 }
+.mr-b-30 {
+  display: inline-block;
+  margin-bottom: 30px;
+}
 .tan {
   margin-bottom: 10px;
 }
@@ -99,10 +103,7 @@ section p {
 .fifteen {
   margin-bottom: 15px;
 }
-.mr-b-30{
-  display: inline-block;
-  margin-bottom: 30px;
-}
+
 .twenty {
   margin-bottom: 20px;
 }
